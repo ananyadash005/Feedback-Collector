@@ -1,0 +1,51 @@
+# --- Environment files ---
+.env
+.env.*
+!/.env.example
+feedback-backend/.env
+feedback-backend/.env.*
+!feedback-backend/.env.example
+feedback-collector-frontend/.env
+feedback-collector-frontend/.env.*
+!feedback-collector-frontend/.env.example
+
+# --- Dependencies ---
+node_modules/
+feedback-backend/node_modules/
+feedback-collector-frontend/node_modules/
+
+# --- Build outputs & caches ---
+dist/
+build/
+.esbuild/
+.vite/
+.cache/
+.parcel-cache/
+feedback-collector-frontend/dist/
+feedback-collector-frontend/.vite/
+feedback-collector-frontend/.cache/
+feedback-backend/dist/
+feedback-backend/build/
+feedback-backend/.cache/
+
+# --- Logs ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Coverage ---
+coverage/
+feedback-backend/coverage/
+
+# --- OS / Editor artifacts ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Misc ---
+*.pid
+*.pid.lock

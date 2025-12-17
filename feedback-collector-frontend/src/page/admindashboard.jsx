@@ -131,6 +131,7 @@ export default function AdminDashboard() {
 
   const chartOptions = {
     responsive: true,
+    maintainAspectRatio: true,
     plugins: {
       legend: {
         display: true,
@@ -139,8 +140,10 @@ export default function AdminDashboard() {
           color: '#0f172a',
           font: {
             size: 14,
-            weight: 'bold'
-          }
+            weight: 'bold',
+            family: "'Inter', sans-serif"
+          },
+          padding: 15
         }
       },
       tooltip: {
@@ -149,6 +152,8 @@ export default function AdminDashboard() {
         bodyColor: '#ffffff',
         borderColor: '#ffffff',
         borderWidth: 1,
+        padding: 12,
+        displayColors: true
       }
     },
     scales: {
@@ -157,23 +162,35 @@ export default function AdminDashboard() {
           color: '#0f172a',
           font: {
             size: 12,
-            weight: 'bold'
-          }
+            weight: '600',
+            family: "'Inter', sans-serif"
+          },
+          padding: 8
         },
         grid: {
+          display: true,
           color: 'rgba(0, 0, 0, 0.1)',
+          drawBorder: true,
+          drawOnChartArea: true
         }
       },
       y: {
+        beginAtZero: true,
         ticks: {
           color: '#0f172a',
           font: {
             size: 12,
-            weight: 'bold'
-          }
+            weight: '600',
+            family: "'Inter', sans-serif"
+          },
+          padding: 8,
+          stepSize: 1
         },
         grid: {
+          display: true,
           color: 'rgba(0, 0, 0, 0.1)',
+          drawBorder: true,
+          drawOnChartArea: true
         }
       }
     }

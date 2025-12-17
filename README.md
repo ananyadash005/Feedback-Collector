@@ -32,9 +32,4 @@ Small full-stack app to collect customer feedback and give a single admin a dash
 - `DELETE /:id` — delete (auth).
 - `GET /filter` — query by product/rating/date/keyword (auth).
 
-## Push to GitHub
-1) `git init`
-2) `git remote add origin https://github.com/ananyadash005/Feedback-Collector`
-3) `git add .`
-4) `git commit -m "Add project"`
-5) `git push -u origin main`
+

@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
+    "build": "cd ../feedback-collector-frontend && npm install && npm run build && cd ../feedback-backend && npm run copy-frontend",
+    "copy-frontend": "node scripts/copy-frontend.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

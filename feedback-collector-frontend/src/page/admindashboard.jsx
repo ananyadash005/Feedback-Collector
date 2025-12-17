@@ -136,7 +136,7 @@ export default function AdminDashboard() {
         display: true,
         position: 'top',
         labels: {
-          color: '#ffffff',
+          color: '#0f172a',
           font: {
             size: 14,
             weight: 'bold'
@@ -154,26 +154,26 @@ export default function AdminDashboard() {
     scales: {
       x: {
         ticks: {
-          color: '#ffffff',
+          color: '#0f172a',
           font: {
             size: 12,
             weight: 'bold'
           }
         },
         grid: {
-          color: 'rgba(255, 255, 255, 0.1)',
+          color: 'rgba(0, 0, 0, 0.1)',
         }
       },
       y: {
         ticks: {
-          color: '#ffffff',
+          color: '#0f172a',
           font: {
             size: 12,
             weight: 'bold'
           }
         },
         grid: {
-          color: 'rgba(255, 255, 255, 0.1)',
+          color: 'rgba(0, 0, 0, 0.1)',
         }
       }
     }
